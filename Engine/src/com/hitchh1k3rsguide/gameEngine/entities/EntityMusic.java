@@ -25,6 +25,7 @@ public class EntityMusic extends AbstractEntity implements ComponentMessageable
     {
         super.dispose();
         song.stop();
+        song.unload();
     }
 
     @Override
